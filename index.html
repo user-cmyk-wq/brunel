@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Brunel">
+<meta name="theme-color" content="#000000"><title>Brunel</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<style>
+:root{--bg:#000;--fg:#fff;--g1:#0d0d0d;--g2:#1a1a1a;--g3:#2e2e2e;--g4:#8a8a8a;--g5:#d4d4d4}
+*{box-sizing:border-box}html,body{height:100%;margin:0;background:var(--bg);color:var(--fg);-webkit-text-size-adjust:100%}
+body{font:16px/1.5 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif;overscroll-behavior:none;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button,input,select,textarea{font:inherit;color:inherit;border-radius:0}
+button{background:none;border:1px solid var(--g3);padding:0 14px;min-height:44px;cursor:pointer}button:active{background:var(--g2)}button:disabled{opacity:.4}
+button.ghost{border:0;padding:0 10px}
+input,textarea,select{background:var(--g1);border:1px solid var(--g3);padding:10px 12px;width:100%;min-height:44px;font-size:16px}
+:focus-visible{outline:2px solid #fff;outline-offset:2px}
+#app{display:flex;height:100dvh;overflow:hidden}
+#side{position:fixed;inset:0 auto 0 0;width:min(84vw,320px);background:var(--bg);border-right:1px solid var(--g3);transform:translateX(-100%);transition:transform .2s;z-index:20;display:flex;flex-direction:column;gap:10px;padding:12px;padding-top:max(12px,env(safe-area-inset-top));padding-bottom:max(12px,env(safe-area-inset-bottom))}
+#side.open{transform:none}#scrim{display:none;position:fixed;inset:0;background:#000a;z-index:15}#scrim.on{display:block}
+@media(min-width:800px){#side{position:static;transform:none}#scrim{display:none!important}#menu{display:none}}
+main{flex:1;min-width:0;display:flex;flex-direction:column}
+header{display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--g3);padding:6px 10px;padding-top:max(6px,env(safe-area-inset-top))}
+#msgs{flex:1;overflow-y:auto;padding:20px 16px;-webkit-overflow-scrolling:touch}.wrap{max-width:680px;margin:0 auto}
+.m{margin-bottom:22px}.u{margin-left:auto;max-width:88%;background:var(--g2);padding:8px 14px;white-space:pre-wrap;word-wrap:break-word}
+.acts{display:flex;gap:4px;flex-wrap:wrap}.acts button{border:0;min-height:36px;padding:0 10px 0 0;font-size:13px;color:var(--g4)}
+.md p{margin:.6em 0}.md pre{background:var(--g1);border:1px solid var(--g3);padding:12px;overflow-x:auto;font-size:13px}.md code{font-family:ui-monospace,Menlo,monospace;font-size:.9em}
+.md table{border-collapse:collapse;display:block;overflow-x:auto}.md td,.md th{border:1px solid var(--g3);padding:4px 10px}.md img{max-width:100%}
+.note{border:1px solid var(--g3);padding:12px;font-size:14px;margin-bottom:14px;color:var(--g5)}
+#bar{border-top:1px solid var(--g3);padding:10px;padding-bottom:max(10px,env(safe-area-inset-bottom))}
+.row{display:flex;gap:8px;align-items:flex-end;max-width:680px;margin:0 auto}
+.chip{display:inline-block;border:1px solid var(--g3);font-size:12px;padding:2px 8px;margin:0 4px 4px 0}
+.item{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:0 8px;min-height:44px;cursor:pointer}.item.sel{background:var(--g2)}
+#sheet{position:fixed;inset:0;background:#000c;z-index:30;display:none;align-items:flex-end;justify-content:center}#sheet.on{display:flex}
+#sheetBox{background:var(--bg);border:1px solid var(--g3);width:100%;max-width:560px;max-height:88dvh;overflow-y:auto;padding:16px;padding-bottom:max(16px,env(safe-area-inset-bottom))}
+.card{border:1px solid var(--g3);padding:12px;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+small,.dim{color:var(--g4);font-size:13px}h2{margin:0 0 12px;font-size:18px}h3{font-size:13px;color:var(--g4);margin:16px 0 8px;font-weight:500}
+.bar{height:4px;background:var(--g3)}.bar i{display:block;height:4px;background:#fff;width:0}
+</style></head><body>
+<div id="app">
+ <div id="scrim"></div>
+ <aside id="side">
+  <div style="display:flex;justify-content:space-between;align-items:center"><b style="font-size:22px">Brunel</b><button class="ghost" id="closeSide" aria-label="Close menu">✕</button></div>
+  <button data-act="new">New conversation</button>
+  <div style="display:flex;gap:8px"><select id="proj" aria-label="Project"></select><button data-act="newproj" aria-label="New project">+</button><button data-act="editproj" id="editproj" hidden>Edit</button></div>
+  <input id="q" placeholder="Search conversations" aria-label="Search">
+  <div id="list" style="flex:1;overflow-y:auto"></div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+   <button data-act="models">Models</button><button data-act="memory">Memory</button>
+   <button data-act="settings">Settings</button><button data-act="export">Export</button>
+   <button data-act="import" style="grid-column:span 2">Import data</button>
+  </div>
+ </aside>
+ <main>
+  <header><button class="ghost" id="menu" aria-label="Open menu">☰</button><button class="ghost" data-act="models" id="mname">Choose a model</button><span class="dim" id="status" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis"></span></header>
+  <div id="msgs"><div class="wrap" id="wrap"></div></div>
+  <div id="bar"><div class="row" style="flex-wrap:wrap" id="pend"></div>
+   <div class="row"><button data-act="attach" aria-label="Attach text file">＋</button>
+    <textarea id="in" rows="1" placeholder="Load a model to start" disabled aria-label="Message"></textarea>
+    <button id="send" data-act="send" disabled>Send</button></div></div>
+ </main>
+</div>
+<div id="sheet"><div id="sheetBox"></div></div>
+<input type="file" id="fAttach" accept=".txt,.md,.csv,.json,.html,.css,.js,.ts,.tsx,.jsx,.py,text/*" multiple hidden>
+<input type="file" id="fImport" accept="application/json,.json" hidden>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+<script type="module">
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const uid=()=>crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2,9);
+const IOS=/iPhone|iPad|iPod/.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+const STANDALONE=!!navigator.standalone||matchMedia("(display-mode: standalone)").matches;
+const MAX_VRAM=IOS?1300:Infinity; // MB. Safari on a 4 GB iPhone closes the page above roughly this.
+
+/* ---------- storage (IndexedDB, on-device) ---------- */
+const dbp=new Promise((res,rej)=>{const r=indexedDB.open("brunel-lite",1);r.onupgradeneeded=()=>{for(const n of ["convos","memory","projects"])r.result.createObjectStore(n,{keyPath:"id"})};r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)});
+const rq=r=>new Promise((res,rej)=>{r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error)});
+const store=async(n,m="readonly")=>(await dbp).transaction(n,m).objectStore(n);
+const all=async n=>rq((await store(n)).getAll());
+const put=async(n,v)=>rq((await store(n,"readwrite")).put(v));
+const del=async(n,id)=>rq((await store(n,"readwrite")).delete(id));
+
+/* ---------- state ---------- */
+const DEF={systemPrompt:"",temperature:0.7,contextChars:IOS?5000:11000};
+const S={convos:[],projects:[],memory:[],projId:"",loaded:null,busy:false,models:[],pending:[],settings:{...DEF}};
+const blank=()=>({id:uid(),title:"New conversation",updated:Date.now(),messages:[],projectId:S.projId||undefined});
+S.active=blank();
+try{Object.assign(S.settings,JSON.parse(localStorage.getItem("brunel-settings")||"{}"))}catch{}
+const saveSettings=()=>{try{localStorage.setItem("brunel-settings",JSON.stringify(S.settings))}catch{}};
+
+/* ---------- engine ---------- */
+let webllm=null,engine=null,f16=false,gpuMsg="";
+async function init(){
+  try{webllm=await import("https://cdn.jsdelivr.net/npm/@mlc-ai/web-llm@0.2/+esm")}
+  catch{gpuMsg="Couldn't download the AI library. Check your internet connection and reload."}
+  if(webllm){
+    if(!navigator.gpu)gpuMsg=IOS?"This iPhone's Safari has no WebGPU. You need iOS 18 or newer (Settings > General > Software Update).":"WebGPU isn't available in this browser. Use current Chrome, Edge or Safari 18+.";
+    else try{const a=await navigator.gpu.requestAdapter();if(!a)gpuMsg="No compatible GPU found on this device.";else f16=a.features.has("shader-f16")}catch{gpuMsg="WebGPU could not start."}
+  }
+  const crashed=localStorage.getItem("brunel-loading");
+  if(crashed){localStorage.removeItem("brunel-loading");S.err="Safari closed the page while a model was loading. That means the iPhone ran out of memory. Pick the smallest model."}
+  await refresh();await listModels();render();
+}
+const BASES=[["SmolLM2-360M-Instruct","Fast","SmolLM2 360M (smallest)"],["Qwen2.5-0.5B-Instruct","Fast","Qwen 2.5 0.5B"],["Llama-3.2-1B-Instruct","Fast","Llama 3.2 1B"],["Qwen2.5-1.5B-Instruct","Balanced","Qwen 2.5 1.5B"],["Llama-3.2-3B-Instruct","Balanced","Llama 3.2 3B"],["Phi-3.5-mini-instruct","Balanced","Phi 3.5 mini"],["Qwen2.5-7B-Instruct","Advanced","Qwen 2.5 7B"],["Llama-3.1-8B-Instruct","Advanced","Llama 3.1 8B"]];
+async function listModels(){
+  S.models=[];if(!webllm)return;
+  const avail=new Map(webllm.prebuiltAppConfig.model_list.map(m=>[m.model_id,m]));
+  for(const [base,tier,label] of BASES){
+    const id=`${base}-${f16?"q4f16_1":"q4f32_1"}-MLC`,m=avail.get(id);if(!m)continue;
+    const vram=Math.round(m.vram_required_MB||0);
+    let cached=false;try{cached=await webllm.hasModelInCache(id)}catch{}
+    S.models.push({id,tier,label,vram,cached,blocked:vram>MAX_VRAM?"Too big for this iPhone's memory. Safari would close the page.":""});
+  }
+}
+async function loadModel(id){
+  S.err="";const info=S.models.find(m=>m.id===id);
+  if(engine){try{await engine.unload()}catch{}engine=null;S.loaded=null}
+  try{localStorage.setItem("brunel-loading",id)}catch{}
+  try{
+    engine=await webllm.CreateMLCEngine(id,{initProgressCallback:r=>{S.prog={p:r.progress,t:r.text};paintProg()}});
+    S.loaded=id;
+  }catch(e){S.err=`This model couldn't load: ${e?.message||e}. Try a smaller one.`;engine=null}
+  finally{try{localStorage.removeItem("brunel-loading")}catch{}}
+  S.prog=null;await listModels();render();paintSheet();
+}
+
+/* ---------- prompt building ---------- */
+function system(){
+  const p=S.projects.find(x=>x.id===S.projId);
+  const parts=["You are Brunel, a helpful assistant running locally on the user's device. Be accurate and say when you are unsure."];
+  if(S.settings.systemPrompt)parts.push(S.settings.systemPrompt);
+  if(p?.instructions)parts.push(`Project instructions (${p.name}):\n${p.instructions}`);
+  if(S.memory.length)parts.push("Things the user asked you to remember:\n"+S.memory.map(m=>"- "+m.text).join("\n"));
+  return parts.join("\n\n");
+}
+function toModel(msgs){
+  const sys=system(),out=[];let used=sys.length;const per=Math.floor(S.settings.contextChars/3);
+  for(let i=msgs.length-1;i>=0;i--){
+    const m=msgs[i];let t=m.content;
+    for(const a of m.files||[])t+=`\n\n[File: ${a.name}]\n${a.text.slice(0,i===msgs.length-1?per:1000)}`;
+    if(used+t.length>S.settings.contextChars&&out.length)break;
+    used+=t.length;out.unshift({role:m.role,content:t});
+  }
+  return [{role:"system",content:sys},...out];
+}
+async function run(base,cont=false){
+  S.busy=true;S.err="";
+  const prior=cont?base.messages.at(-1).content:"";
+  const hist=cont?[...base.messages,{role:"user",content:"Continue exactly where you stopped. Do not repeat earlier text."}]:base.messages;
+  const kept=cont?base.messages.slice(0,-1):base.messages;
+  let text=prior;S.active={...base,messages:[...kept,{role:"assistant",content:text}]};render();
+  try{
+    const stream=await engine.chat.completions.create({stream:true,temperature:S.settings.temperature,messages:toModel(hist)});
+    for await(const ch of stream){const d=ch.choices[0]?.delta?.content;if(d){text+=d;S.active.messages[S.active.messages.length-1].content=text;paintLast()}}
+  }catch(e){S.err=e?.message||String(e)}
+  S.busy=false;S.active.updated=Date.now();
+  if(!S.active.messages.at(-1).content)S.active.messages.pop();
+  await put("convos",S.active);await refresh();render();
+}
+async function submit(msgs){
+  if(!engine){S.err="Load a model first.";return render()}
+  const last=msgs.at(-1);
+  S.active={...S.active,projectId:S.active.projectId??(S.projId||undefined),title:S.active.messages.length?S.active.title:(last.content||last.files?.[0]?.name||"New conversation").slice(0,40),messages:msgs,updated:Date.now()};
+  await put("convos",S.active);await run(S.active);
+}
+
+/* ---------- rendering ---------- */
+let rafId=0;
+const md=t=>window.DOMPurify&&window.marked?DOMPurify.sanitize(marked.parse(t||"…")):esc(t||"…");
+function msgHTML(m,i,n){
+  const last=i===n-1,files=(m.files||[]).map(f=>`<span class="chip">${esc(f.name)}</span>`).join("");
+  let acts="";
+  if(!S.busy&&m.content){
+    acts=`<div class="acts"><button data-act="copy" data-i="${i}">Copy</button>`;
+    if(m.role==="user")acts+=`<button data-act="edit" data-i="${i}">Edit</button>`;
+    else{acts+=`<button data-act="remember" data-i="${i}">Remember</button>`;if(last)acts+=`<button data-act="regen">Regenerate</button><button data-act="cont">Continue</button>`}
+    acts+="</div>"}
+  return m.role==="user"?`<div class="m">${files}<div class="u">${esc(m.content)}</div>${acts}</div>`:`<div class="m"><div class="md" data-body="${i}">${md(m.content)}</div>${acts}</div>`;
+}
+function paintLast(){cancelAnimationFrame(rafId);rafId=requestAnimationFrame(()=>{const i=S.active.messages.length-1,el=document.querySelector(`[data-body="${i}"]`);if(el)el.innerHTML=md(S.active.messages[i].content);const c=$("#msgs");c.scrollTop=c.scrollHeight})}
+function paintProg(){const el=$("#status");if(S.prog)el.textContent=`${Math.round(S.prog.p*100)}% · ${S.prog.t}`;const b=$("#pbar");if(b&&S.prog)b.style.width=S.prog.p*100+"%"}
+function render(){
+  const info=S.models.find(m=>m.id===S.loaded);
+  $("#mname").textContent=info?info.label:"Choose a model";
+  $("#status").textContent=S.prog?`${Math.round(S.prog.p*100)}%`:"";
+  const ta=$("#in");ta.disabled=!S.loaded;ta.placeholder=S.loaded?"Message Brunel":"Load a model to start";
+  $("#send").textContent=S.busy?"Stop":"Send";$("#send").disabled=!S.loaded;
+  $("#editproj").hidden=!S.projId;
+  $("#proj").innerHTML=`<option value="">All conversations</option>`+S.projects.map(p=>`<option value="${p.id}" ${p.id===S.projId?"selected":""}>${esc(p.name)}</option>`).join("");
+  const q=$("#q").value.toLowerCase();
+  const shown=S.convos.filter(c=>(!S.projId||c.projectId===S.projId)&&(!q||(c.title+c.messages.map(m=>m.content).join(" ")).toLowerCase().includes(q)));
+  $("#list").innerHTML=shown.length?shown.map(c=>`<div class="item ${c.id===S.active.id?"sel":""}" data-act="open" data-id="${c.id}"><span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(c.title)}</span><button class="ghost" data-act="del" data-id="${c.id}" aria-label="Delete conversation">✕</button></div>`).join(""):`<p class="dim">${q?"No matches.":"Nothing here yet."}</p>`;
+  $("#pend").innerHTML=S.pending.map((f,i)=>`<button class="chip" style="min-height:30px" data-act="unattach" data-i="${i}">${esc(f.name)} ✕</button>`).join("");
+  let h="";
+  if(gpuMsg)h+=`<div class="note">${esc(gpuMsg)}</div>`;
+  if(IOS&&!STANDALONE)h+=`<div class="note">Tip: tap Share, then “Add to Home Screen”. Safari can delete a website's stored data, including downloaded models, after about a week unused. An installed app is exempt.</div>`;
+  if(!S.active.messages.length){h+=`<div style="padding-top:48px"><h1 style="font-size:34px;margin:0 0 10px;letter-spacing:-.02em">Runs on your device.</h1><p class="dim" style="max-width:420px">Pick a model once. It downloads to this phone and works from there. Your messages never go to a server.</p>${S.loaded?"":`<button data-act="models" style="margin-top:14px">Choose a model</button>`}</div>`}
+  h+=S.active.messages.map((m,i)=>msgHTML(m,i,S.active.messages.length)).join("");
+  if(S.err)h+=`<div class="note">${esc(S.err)}</div>`;
+  $("#wrap").innerHTML=h;const c=$("#msgs");c.scrollTop=c.scrollHeight;
+}
+async function refresh(){try{S.convos=(await all("convos")).sort((a,b)=>b.updated-a.updated);S.memory=await all("memory");S.projects=(await all("projects")).sort((a,b)=>b.updated-a.updated)}catch{S.err="This browser blocked local storage (private browsing?). Chats won't be saved."}}
+
+/* ---------- sheets ---------- */
+let sheet=null;
+function openSheet(k){sheet=k;$("#sheet").classList.add("on");paintSheet()}
+function closeSheet(){sheet=null;$("#sheet").classList.remove("on")}
+async function paintSheet(){
+  if(!sheet)return;let h="";
+  if(sheet==="models"){
+    let est="";try{const e=await navigator.storage.estimate();est=` Storage used: ${(e.usage/1e9).toFixed(1)} of ${(e.quota/1e9).toFixed(1)} GB.`}catch{}
+    h=`<h2>Models</h2><p class="dim">${IOS?"On iPhone only the smaller models can run. Close other tabs and apps before loading one. ":""}“GPU memory” is what each needs.${est}</p>`;
+    if(!S.models.length)h+=`<p class="dim">No models available yet. ${esc(gpuMsg||"")}</p>`;
+    for(const t of ["Fast","Balanced","Advanced"]){const ms=S.models.filter(m=>m.tier===t);if(!ms.length)continue;
+      h+=`<h3>${{Fast:"Fast · everyday chat",Balanced:"Balanced · code, writing, reasoning",Advanced:"Advanced · needs a strong GPU"}[t]}</h3>`;
+      for(const m of ms)h+=`<div class="card"><div><div>${esc(m.label)}</div><small>${(m.vram/1024).toFixed(1)} GB GPU memory · ${S.loaded===m.id?"Loaded":m.cached?"Downloaded":"Not downloaded"}</small>${m.blocked?`<br><small>${esc(m.blocked)}</small>`:""}</div><div style="display:flex;gap:6px"><button data-act="load" data-id="${m.id}" ${gpuMsg||S.prog||S.loaded===m.id||m.blocked?"disabled":""}>${m.cached?"Load":"Download"}</button>${m.cached&&S.loaded!==m.id?`<button data-act="rmmodel" data-id="${m.id}">Remove</button>`:""}</div></div>`}
+    if(S.prog)h+=`<div class="bar"><i id="pbar" style="width:${S.prog.p*100}%"></i></div><small>${Math.round(S.prog.p*100)}% · ${esc(S.prog.t)}</small>`;
+    if(S.loaded)h+=`<p><button data-act="unload">Unload current model</button></p>`;
+  }else if(sheet==="memory"){
+    h=`<h2>Memory</h2><p class="dim">Included in every conversation. Stored only on this phone.</p>`+(S.memory.length?"":`<p class="dim">No notes yet.</p>`)+
+      S.memory.map(m=>`<div class="card" style="padding:6px"><input data-mem="${m.id}" value="${esc(m.text)}"><button data-act="delmem" data-id="${m.id}" aria-label="Delete note">✕</button></div>`).join("")+
+      `<div class="card" style="padding:6px"><input id="newmem" placeholder="e.g. I prefer short answers"><button data-act="addmem">Save</button></div>`;
+  }else if(sheet==="settings"){
+    const s=S.settings;
+    h=`<h2>Settings</h2><h3>Custom instructions</h3><textarea id="sSys" rows="3">${esc(s.systemPrompt)}</textarea>
+    <h3>Temperature: <span id="tv">${s.temperature}</span></h3><input type="range" id="sTemp" min="0" max="1.5" step="0.1" value="${s.temperature}" style="padding:0">
+    <h3>Context budget (characters): <span id="cv">${s.contextChars}</span></h3><input type="range" id="sCtx" min="2000" max="40000" step="1000" value="${s.contextChars}" style="padding:0"><small>Keep it modest on iPhone. Too high makes generation fail.</small>
+    <p style="margin-top:18px"><button data-act="persist">Keep storage persistent</button> <button data-act="erase">Erase all data</button></p>`;
+  }else if(sheet==="project"){
+    const p=S.projects.find(x=>x.id===S.projId);if(!p)return closeSheet();
+    h=`<h2>Project</h2><input id="pName" value="${esc(p.name)}" aria-label="Project name"><h3>Instructions</h3><textarea id="pIns" rows="5" placeholder="How Brunel should behave in this project">${esc(p.instructions)}</textarea>
+    <p style="margin-top:16px"><button data-act="saveproj">Save</button> <button data-act="delproj">Delete project</button></p>`;
+  }
+  $("#sheetBox").innerHTML=h+`<p style="margin-top:14px"><button data-act="closesheet" style="width:100%">Close</button></p>`;
+  if(sheet==="settings"){
+    $("#sSys").oninput=e=>{S.settings.systemPrompt=e.target.value;saveSettings()};
+    $("#sTemp").oninput=e=>{S.settings.temperature=+e.target.value;$("#tv").textContent=e.target.value;saveSettings()};
+    $("#sCtx").oninput=e=>{S.settings.contextChars=+e.target.value;$("#cv").textContent=e.target.value;saveSettings()};
+  }
+  if(sheet==="memory")document.querySelectorAll("[data-mem]").forEach(el=>el.onchange=async()=>{await put("memory",{id:el.dataset.mem,text:el.value});await refresh()});
+}
+
+/* ---------- actions ---------- */
+function download(name,text){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([text],{type:"application/json"}));a.download=name;document.body.appendChild(a);a.click();a.remove()}
+const act={
+  new(){S.active=blank();S.err="";closeSide();render()},
+  open(t){const c=S.convos.find(x=>x.id===t.dataset.id);if(c){S.active=c;S.err="";closeSide();render()}},
+  async del(t){await del("convos",t.dataset.id);if(S.active.id===t.dataset.id)S.active=blank();await refresh();render()},
+  models(){closeSide();openSheet("models")},memory(){closeSide();openSheet("memory")},settings(){closeSide();openSheet("settings")},
+  closesheet:closeSheet,
+  load(t){loadModel(t.dataset.id)},
+  async rmmodel(t){await webllm.deleteModelAllInfoInCache(t.dataset.id);await listModels();paintSheet()},
+  async unload(){if(engine)await engine.unload();engine=null;S.loaded=null;render();paintSheet()},
+  async send(){
+    if(S.busy){engine?.interruptGenerate();return}
+    const ta=$("#in"),t=ta.value.trim();if((!t&&!S.pending.length)||!S.loaded)return;
+    const files=S.pending.length?S.pending:undefined;ta.value="";ta.style.height="";S.pending=[];
+    await submit([...S.active.messages,{role:"user",content:t,files}]);
+  },
+  copy(t){navigator.clipboard?.writeText(S.active.messages[+t.dataset.i].content)},
+  async edit(t){const i=+t.dataset.i,v=prompt("Edit message",S.active.messages[i].content);if(v===null||!v.trim()||S.busy)return;await submit([...S.active.messages.slice(0,i),{...S.active.messages[i],content:v.trim()}])},
+  async remember(t){await put("memory",{id:uid(),text:S.active.messages[+t.dataset.i].content.slice(0,300)});await refresh();t.textContent="Saved"},
+  async regen(){const ms=[...S.active.messages];if(ms.at(-1)?.role==="assistant")ms.pop();S.active={...S.active,messages:ms};await run(S.active)},
+  async cont(){await run(S.active,true)},
+  attach(){$("#fAttach").click()},unattach(t){S.pending.splice(+t.dataset.i,1);render()},
+  async export(){download("brunel-data.json",JSON.stringify({convos:await all("convos"),memory:await all("memory"),projects:await all("projects")}))},
+  import(){$("#fImport").click()},
+  async addmem(){const v=$("#newmem").value.trim();if(!v)return;await put("memory",{id:uid(),text:v});await refresh();paintSheet()},
+  async delmem(t){await del("memory",t.dataset.id);await refresh();paintSheet()},
+  async newproj(){const n=prompt("Project name");if(!n?.trim())return;const p={id:uid(),name:n.trim(),instructions:"",updated:Date.now()};await put("projects",p);await refresh();S.projId=p.id;S.active=blank();render()},
+  editproj(){closeSide();openSheet("project")},
+  async saveproj(){const p=S.projects.find(x=>x.id===S.projId);if(!p)return;await put("projects",{...p,name:$("#pName").value.trim()||p.name,instructions:$("#pIns").value,updated:Date.now()});await refresh();closeSheet();render()},
+  async delproj(){const p=S.projects.find(x=>x.id===S.projId);if(!p||!confirm(`Delete “${p.name}” and its conversations?`))return;for(const c of S.convos)if(c.projectId===p.id)await del("convos",c.id);await del("projects",p.id);S.projId="";S.active=blank();await refresh();closeSheet();render()},
+  async persist(){const ok=await navigator.storage?.persist?.();alert(ok?"Storage is now persistent.":"Safari didn't grant persistence. Installing Brunel to the Home Screen helps.")},
+  async erase(){if(!confirm("Delete all conversations, memory and projects on this device?"))return;for(const n of ["convos","memory","projects"])for(const x of await all(n))await del(n,x.id);S.active=blank();S.projId="";await refresh();closeSheet();render()},
+};
+const closeSide=()=>{$("#side").classList.remove("open");$("#scrim").classList.remove("on")};
+document.addEventListener("click",e=>{const t=e.target.closest("[data-act]");if(t&&act[t.dataset.act]){e.stopPropagation();act[t.dataset.act](t)}});
+$("#sheet").addEventListener("click",e=>{if(e.target.id==="sheet")closeSheet()});
+$("#menu").onclick=()=>{$("#side").classList.add("open");$("#scrim").classList.add("on")};
+$("#closeSide").onclick=closeSide;$("#scrim").onclick=closeSide;
+$("#proj").onchange=e=>{S.projId=e.target.value;S.active=blank();render()};
+$("#q").oninput=render;
+$("#in").addEventListener("input",e=>{e.target.style.height="auto";e.target.style.height=Math.min(e.target.scrollHeight,160)+"px"});
+$("#in").addEventListener("keydown",e=>{if(!IOS&&e.key==="Enter"&&!e.shiftKey&&!e.isComposing){e.preventDefault();act.send()}});
+$("#fAttach").onchange=async e=>{for(const f of e.target.files){if(f.size>2e6){S.err=`${f.name} is larger than 2 MB.`;continue}S.pending.push({name:f.name,text:await f.text()})}e.target.value="";render()};
+$("#fImport").onchange=async e=>{try{const o=JSON.parse(await e.target.files[0].text());for(const c of o.convos||[])await put("convos",c);for(const m of o.memory||[])await put("memory",m);for(const p of o.projects||[])await put("projects",p);await refresh();render()}catch{S.err="That file isn't a valid Brunel export.";render()}e.target.value=""};
+render();init();
+</script></body></html>
